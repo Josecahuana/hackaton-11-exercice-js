@@ -1,29 +1,32 @@
+//////////////////////////////////////////////////////// CON DISEÑO
+/*EJERCICIOS*/
 
-// /*EJERCICIOS*/
+//1
+function messageString() {
+    const nombre = document.querySelector('#nombre').value;
+    const apellido = document.querySelector('#apellido').value;
+    const edad = document.querySelector('#edad').value;
+    document.querySelector('#solution1').textContent = dato1(nombre, apellido, edad);
+}
+const dato1 = (name, lastName, year) => `Hola mi nombre es ${name} ${lastName} y mi edad ${year}`;
 
-// //1
-// function messageString() {
-//     const nombre = document.querySelector('#nombre').value;
-//     const apellido = document.querySelector('#apellido').value;
-//     const edad = document.querySelector('#edad').value;
-//     document.querySelector('#solution1').textContent = dato(nombre, apellido, edad);
-// }
-// const dato = (name, lastName, year) => `Hola mi nombre es ${name} ${lastName} y mi edad ${year}`;
+//2
+function sumCube() {
+    const numeros = document.querySelector('#numeros').value;
+    const arr = numeros.split(',');
+    document.querySelector('#solution2').textContent = calcularArr(arr);
+}
 
-// //2
-// function sumCube() {
-//     const numeros = document.querySelector('#numeros').value;
-//     const arr = numeros.split(',');
-//     document.querySelector('#solution2').textContent = calcularArr(arr);
-// }
+function calcularArr(data) {
+    let sum = 0;
+    data.forEach(dat => {
+        sum += Math.pow(dat, 3);
+    })
+    return sum;
+}
 
-// function calcularArr(data) {
-//     let sum = 0;
-//     data.forEach(dat => {
-//         sum += Math.pow(dat, 3);
-//     })
-//     return sum;
-// }
+
+//////////////////////////////////////////////////////// SIN DISEÑO 
 
 //3 --falta
 function typeValor(valor) {
