@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>BIENV<span id="head-t">ENIDO</span></h1>
+
+    <div class="botons">
+        <button type="button" id="boton1" onclick="show('#boton1',1)">
+            Ejercicio 1
+        </button>
+        <button type="button" id="boton2" onclick="show('#boton2',2)">
+            Ejercicio 2
+        </button>
+        <button type="button" id="boton3" onclick="show('#boton3',3)">
+            Ejercicio 3
+        </button>
+        <button type="button" id="boton4" onclick="show('#boton4',4)">
+            Ejercicio 4
+        </button>
+        <button type="button" id="boton5" onclick="show('#boton5',5)">
+            Ejercicio 5
+        </button>
+        <button type="button" id="boton6" onclick="show('#boton6',6)">
+            Ejercicio 6
+        </button>
+        <button type="button" id="boton7" onclick="show('#boton7',7)">
+            Ejercicio 7
+        </button>
+        <button type="button" id="boton8" onclick="show('#boton8',8)">
+            Ejercicio 8
+        </button>
+        <button type="button" id="boton9" onclick="show('#boton9',9)">
+            Ejercicio 9
+        </button>
+        <button type="button" id="boton10" onclick="show('#boton10',10)">
+            Ejercicio 10
+        </button>
+        <button type="button" id="boton11" onclick="show('#boton11',11)">
+            Ejercicio 11
+        </button>
+        <button type="button" id="boton12" onclick="show('#boton12',12)">
+            Ejercicio 12
+        </button>
+        <button type="button" id="boton13" onclick="show('#boton13',13)">
+            Ejercicio 13
+        </button>
+        <button type="button" id="boton14" onclick="show('#boton14',14)">
+            Ejercicio 14
+        </button>
+        <button type="button" id="boton15" onclick="show('#boton15',15)">
+            Ejercicio 15
+        </button>
+        <button type="button" id="boton16" onclick="show('#boton16',16)">
+            Ejercicio 16
+        </button>
+        <button type="button" id="boton17" onclick="show('#boton17',17)">
+            Ejercicio 17
+        </button>
+        <button type="button" id="boton18" onclick="show('#boton18',18)">
+            Ejercicio 18
+        </button>
+        <button type="button" id="boton19" onclick="show('#boton19',19)">
+            Ejercicio 19
+        </button>
+        <button type="button" id="boton20" onclick="show('#boton20',20)">
+            Ejercicio 20
+        </button>
+        <button type="button" id="boton21" onclick="show('#boton21',21)">
+            Ejercicio 21
+        </button>
+        <button type="button" id="boton22" onclick="show('#boton22',22)">
+            Ejercicio 22
+        </button>
+    </div>
+
+    <div class="formulario">
+        <div id="formulario1">
+            <h2>Ejercicio 1</h2>
+            <p>Utilizando función arrow, crear una función que reciba como parámetros un nombre, apellido y edad y los
+                retorne en un string concatenado “Hola mi nombre es sebastián yabiku y mi edad 33”</p>
+            <div class="inputs">
+                <label for="nombre">Ingresar nombre</label>
+                <input type="text" id="nombre" placeholder="nombre.....">
+            </div>
+            <div class="inputs">
+                <label for="apellido">Ingresar apellido</label>
+                <input type="text" id="apellido" placeholder="apellido.....">
+            </div>
+            <div class="inputs">
+                <label for="edad">Ingresar edad</label>
+                <input type="text" id="edad" placeholder="edad.....">
+            </div>
+            <button onclick="messageString()">Validar Contraseña</button>
+            <span id="solution1"></span>
+        </div>
+
+        <div id="formulario2">
+            <h2>Ejercicio 2</h2>
+            <p>Cree una función que tome números y devuelva la suma de sus cubos.</p>
+            <div class="inputs">
+                <label for="numeros">Numeros</label>
+                <input type="text" id="numeros" placeholder="1,2,3">
+            </div>
+            <button onclick="sumCube()">Calcular Impuestos</button>
+            <span id="solution2"></span>
+        </div>
+        <div id="formulario3">
+            <h2>Ejercicio 3</h2>
+            <p>Crear una funcion que me retorne el tipo de valor entregado, invocar la función para los distintos tipos
+                de js</p>
+            <div class="inputs">
+                <label for="dato">Valor</label>
+                <input type="text" id="dato" placeholder="[1,2,3]">
+            </div>
+            <button onclick="typeValor()">Calcular Impuestos</button>
+            <span id="solution3"></span>
+        </div>
+        <div id="formulario4">
+            <h2>Ejercicio 4</h2>
+            <p>Crear una función que reciba n cantidad de argumentos y los sume ( utilizar parametros rest)
+            </p>
+            <div class="inputs">
+                <label for="argumento">Valor</label>
+                <input type="text" id="argumento" placeholder="[1,2,3]">
+            </div>
+            <button onclick="sumarArgumentos()">Calcular Impuestos</button>
+            <span id="solution4"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
